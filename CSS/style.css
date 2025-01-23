@@ -1,0 +1,345 @@
+:root {
+  --bs-info-rgb: 64, 130, 210;
+  --bs-secondary-bg-subtle: #e2e3e57e;
+  --textColor: rgb(64, 130, 210);
+}
+* {
+  box-sizing: border-box !important;
+}
+body {
+  position: relative;
+}
+nav .deep:hover .deep-list {
+  display: block;
+}
+.deep-list {
+  position: absolute;
+  display: none;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+main {
+  background-image: url(../background.jpg);
+}
+
+main > div:first-child {
+  margin-top: 140px;
+  width: 50%;
+}
+main div:first-child h1 {
+  font-size: 57px;
+}
+main div:first-child button {
+  padding: 10px 0px;
+}
+.btn-primary {
+  background-color: var(--textColor);
+}
+.text-primary {
+  color: var(--textColor) !important;
+}
+.move:hover i {
+  transform: translateX(5px) !important;
+}
+.items {
+  margin-top: 70px;
+}
+.item svg {
+  font-size: 25px;
+}
+.item {
+  transition: all 0.5s;
+}
+.item:hover {
+  transform: scale(1.07);
+}
+
+.item:hover p:first-of-type {
+  color: var(--textColor);
+}
+li {
+  list-style-type: none;
+}
+
+.video-section .heading {
+  line-height: 1.3;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+}
+
+.card-text {
+  position: relative;
+  /* text-indent: 25px; */
+}
+
+/* .card-text::after {
+  content: "\275E";
+  position: absolute;
+  bottom: -36px;
+  right: 7px;
+  font-size: 45px;
+  color: var(--textColor);
+}
+.card-text::before {
+  content: "\275D";
+  position: absolute;
+  top: -18px;
+  left: -28px;
+  font-size: 45px;
+  color: var(--textColor);
+} */
+
+.card-text svg {
+  font-size: 20px;
+  color: var(--textColor);
+  display: inline-block;
+}
+.card-text svg.quote-right {
+  padding-left: 10px;
+}
+.card-text svg.quote-left {
+  padding-right: 21px;
+}
+.group-section img {
+  width: 110px;
+  height: 40px;
+  filter: grayscale(100);
+  transform: scale(0.8);
+  transition: transform 0.5s;
+}
+
+.group-section img:hover {
+  filter: grayscale(0);
+  transform: scale(1);
+}
+.testimonials .heading,
+.services .heading {
+  line-height: 2;
+}
+
+.testimonials .card .profile {
+  margin-top: -60px;
+  z-index: 1;
+  padding-left: 25px;
+}
+.testimonials .circles {
+  margin-top: -20px;
+}
+.testimonials .circles svg {
+  cursor: pointer;
+}
+.testimonials .circles svg:hover {
+  stroke: white;
+  fill: blue;
+}
+.services .card {
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 0 #00000045;
+}
+.services .card .icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+.services .card-activity:hover .path-activity {
+  fill: var(--textColor);
+}
+.services .card-bounding:hover .path-activity {
+  fill: #ff0066;
+}
+.services .card-circle:hover .path-activity {
+  fill: #fa4d56;
+}
+.services .card-calendar:hover .path-activity {
+  fill: #8a3ffc;
+}
+.services .card-easel:hover .path-activity {
+  fill: #24a148fc;
+}
+.services .card-square:hover .path-activity {
+  fill: #ee1875;
+}
+
+.services .card:hover .icon {
+  color: white !important;
+}
+.descr-service {
+  font-size: 16px;
+}
+
+.portfolio .btns p {
+  cursor: pointer;
+}
+.portfolio .btns p:hover {
+  color: var(--textColor);
+}
+.portfolio img {
+  width: 100%;
+  /* height: 300px; */
+}
+
+.cards-img .card-img {
+  position: relative;
+  overflow: hidden;
+}
+.cards-img .heading-image {
+  position: absolute;
+  /* display: none; */
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  transition: all 1s;
+}
+
+.cards-img .card-img:hover .heading-image {
+  bottom: 0;
+}
+.cards-img .heading-image i:hover,
+.cards-img .heading-image svg:hover {
+  color: var(--textColor);
+}
+.teamCards .card {
+  box-shadow: 1px 1px 0px 1px rgba(148, 148, 148, 0.414);
+}
+
+.teamCards .card-img {
+  position: relative;
+}
+.teamCards .card img {
+  height: 18rem !important;
+}
+
+.card .links {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  bottom: 35px;
+  opacity: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: all 0.5s;
+}
+.teamCards .card:hover .links {
+  opacity: 1;
+  bottom: 25px;
+}
+.links i {
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.752);
+  color: rgb(106, 106, 106);
+  padding: 5px 12px;
+  transition: all 0.8s;
+}
+
+.links i:hover {
+  color: white;
+  background-color: var(--textColor);
+}
+
+.price .plan-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.price .plans .plan {
+  border: 1px solid rgba(131, 131, 131, 0.478);
+  width: 25rem;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 17px;
+  border-radius: 5px;
+  color: rgba(128, 128, 128, 0.796);
+}
+.plan.middle {
+  color: white !important;
+  background-color: var(--textColor);
+  border: none !important;
+  border-radius: 0px !important;
+  transform: scale(1.1);
+}
+.plan.middle button {
+  border-color: white;
+}
+.plan.middle button:hover {
+  background-color: rgb(49, 107, 177);
+}
+.plan button {
+  outline: none;
+  /* border: none; */
+  border: 1px solid rgba(111, 111, 111, 0.392);
+  border-radius: 3px;
+  padding: 7px 25px;
+  color: rgba(128, 128, 128, 0.796);
+  background-color: transparent;
+  transition: all 1s;
+}
+.plan button:hover {
+  background-color: var(--textColor);
+  color: white;
+}
+.questions .accordion-header button:hover {
+  color: var(--textColor) !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.accordion-header {
+  border: none !important;
+}
+.accordion-button:not(.collapsed)::after {
+  color: var(--textColor) !important;
+}
+.accordion-button:not(.collapsed) {
+  color: white !important;
+  background-color: var(--textColor) !important;
+}
+.accordion-item:has(.accordion-button:not(.collapsed)) {
+  border: none !important;
+  color: white !important;
+  background-color: var(--textColor) !important;
+}
+.above {
+  bottom: 20px;
+  right: 20px;
+}
+input,
+textarea {
+  outline: none;
+  border: none;
+  border: 1px solid rgba(128, 128, 128, 0.34);
+}
+.contact input[type="submit"] {
+  background-color: var(--textColor);
+}
+footer {
+  border-top: 1px solid var(--textColor);
+}
+
+footer .links i {
+  font-size: 16px;
+  border: 1px solid var(--textColor);
+}
+
+footer .links i:hover {
+  background-color: var(--textColor);
+  color: white !important;
+}
+footer ul a:hover {
+  color: var(--textColor) !important;
+}
