@@ -63,7 +63,7 @@ function createImg(img, i) {
   return imgElement;
 }
 function createImgCol(imgs) {
-  const html = `<div class="col-4">
+  const html = `<div class="col-sm col-lg-4 ">
         ${imgs.map((item, i) => createImg(item, i))}
     </div>`;
   cardsImg.insertAdjacentHTML("beforeend", html);

@@ -9,6 +9,7 @@
 body {
   position: relative;
 }
+
 nav .deep:hover .deep-list {
   display: block;
 }
@@ -22,8 +23,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 main {
   background-image: url(../background.jpg);
+  background-size: cover;
 }
 
 main > div:first-child {
@@ -254,7 +257,8 @@ li {
   gap: 20px;
 }
 .price .plans .plan {
-  border: 1px solid rgba(131, 131, 131, 0.478);
+  box-shadow: 1px 1px 10px 0 #00000045;
+  /* border: 1px solid rgba(131, 131, 131, 0.478); */
   width: 25rem;
   padding: 30px;
   display: flex;
@@ -265,6 +269,9 @@ li {
   font-size: 17px;
   border-radius: 5px;
   color: rgba(128, 128, 128, 0.796);
+}
+.plan span {
+  font-size: 2.5rem !important;
 }
 .plan.middle {
   color: white !important;
@@ -342,4 +349,43 @@ footer .links i:hover {
 }
 footer ul a:hover {
   color: var(--textColor) !important;
+}
+
+@media (max-width: 320px) {
+  main > .container {
+    width: 90% !important;
+  }
+  main div:first-child h1 {
+    font-size: 1.75rem !important;
+  }
+  main div:first-child p {
+    font-size: 1rem !important;
+  }
+
+  .heading-text {
+    font-size: 2rem !important;
+  }
+
+  .about-section button {
+    font-size: 1.2rem !important;
+  }
+  .statis > div p:first-child {
+    font-size: 2.5rem !important;
+  }
+  .services .card .icon {
+    font-size: 2.3rem !important;
+  }
+  .call p:nth-child(2) {
+    width: 100% !important;
+  }
+  .plan.middle {
+    transform: scale(1) !important;
+    /* margin: 3rem 0 !important; */
+  }
+  .questions .accordion {
+    width: 100% !important;
+  }
+  footer > div:first-child p:nth-of-type(2) {
+    width: 100% !important;
+  }
 }
