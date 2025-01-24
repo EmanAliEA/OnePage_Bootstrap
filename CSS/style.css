@@ -8,6 +8,7 @@
 }
 body {
   position: relative;
+  width: 100%;
 }
 
 nav .deep:hover .deep-list {
@@ -371,6 +372,9 @@ footer ul a:hover {
   }
   .statis > div p:first-child {
     font-size: 2.5rem !important;
+  }
+  .services .card {
+    width: 19rem !important;
   }
   .services .card .icon {
     font-size: 2.3rem !important;
