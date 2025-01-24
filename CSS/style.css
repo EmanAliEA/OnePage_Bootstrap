@@ -326,8 +326,9 @@ li {
   background-color: var(--textColor) !important;
 }
 .above {
-  bottom: 2%;
-  right: 2%;
+  bottom: 10%;
+  /* right: 3%; */
+  left: 55%;
 }
 input,
 textarea {
