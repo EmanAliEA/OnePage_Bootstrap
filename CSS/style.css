@@ -363,7 +363,7 @@ footer ul a:hover {
     width: 45% !important;
   }
   main > .container-fluid {
-    width: 100% !important;
+    width: 100vw !important;
   }
   main div:first-child h1 {
     font-size: 1.75rem !important;
@@ -417,7 +417,7 @@ footer ul a:hover {
     display: flex !important;
   }
   main > .container-fluid {
-    width: 90% !important;
+    width: 90vw !important;
   }
   main div:first-child h1 {
     font-size: 1.75rem !important;
@@ -456,12 +456,12 @@ footer ul a:hover {
     width: 100% !important;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .nav-sm {
     display: flex !important;
   }
   main > .container-fluid {
-    width: 90% !important;
+    width: 90vw !important;
   }
   main div:first-child h1 {
     font-size: 1.75rem !important;
