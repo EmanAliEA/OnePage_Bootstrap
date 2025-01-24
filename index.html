@@ -21,7 +21,9 @@
     <nav
       class="navbar navbar-expand-lg bg-body-tertiary position-sticky w-100 top-0 z-3 bg-light"
     >
-      <div class="container py-2 justify-content-between position-relative">
+      <div
+        class="container-fluid py-2 justify-content-between position-relative"
+      >
         <a class="navbar-brand fs-2 text-primary" href="#">OnePage</a>
         <div
           class="collapse justify-content-end navbar-collapse"
@@ -127,12 +129,146 @@
           </ul>
           <button class="btn bg-info text-light" type="submit">Search</button>
         </div>
+        <div class="nav-sm d-flex align-items-center gap-3 d-none">
+          <button class="btn bg-info text-light text-capitalize" type="submit">
+            get started
+          </button>
+          <i
+            class="fa-solid fa-bars fs-2 icon"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          ></i>
+        </div>
       </div>
     </nav>
 
+    <!-- Modal -->
+    <div
+      class="modal fade modal-dialog modal-dialog-centered modal-dialog-scrollable w-100 position-absolute z-4 start-50"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="navbar-nav me-4 mb-2 mb-lg-0 gap-1 fs-6">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item text-capitalize" href="#"
+                      >dropdown 1</a
+                    >
+                  </li>
+                  <li class="dropstart">
+                    <a
+                      href="#"
+                      class="dropdown-item text-capitalize deep d-flex justify-content-between align-items-center"
+                      >deep dropDown<i class="fa-solid fa-angle-down ms-2"></i
+                    ></a>
+                    <ul class="deep-list">
+                      <li>
+                        <a
+                          href="#"
+                          class="text-decoration-none text-capitalize text-dark"
+                          >dropdown 1</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-decoration-none text-capitalize text-dark"
+                          >dropdown 2</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-decoration-none text-capitalize text-dark"
+                          >dropdown 3</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-decoration-none text-capitalize text-dark"
+                          >dropdown 4</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-decoration-none text-capitalize text-dark"
+                          >dropdown 5</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-capitalize" href="#"
+                      >dropdown 2</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-capitalize" href="#"
+                      >dropdown 3</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-capitalize" href="#"
+                      >dropdown 4</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <main class="pb-4 py-lg-5 w-100" id="main">
       <div
-        class="container d-flex flex-column gap-2 align-items-center justify-content-center"
+        class="container-fluid d-flex flex-column gap-2 align-items-center justify-content-center"
       >
         <h1 class="text-center text-capitalize">
           One Page bootstrap Website Template
@@ -147,7 +283,7 @@
         </button>
       </div>
       <div
-        class="items container d-flex gap-3 flex-lg-nowrap flex-md-wrap flex-sm-wrap flex-wrap"
+        class="items container-fluid d-flex gap-3 gap-md-3 flex-lg-nowrap flex-md-wrap flex-sm-wrap flex-wrap"
       >
         <div
           class="item bg-light ps-4 py-5 rounded-3 d-flex flex-column align-items-start gap-2"
@@ -192,7 +328,10 @@
       </div>
     </main>
 
-    <section class="about-section container my-2 my-lg-5 py-5 w-100" id="about">
+    <section
+      class="about-section container-fluid my-2 my-lg-5 py-5 w-100"
+      id="about"
+    >
       <div class="heading m-auto text-center my-5">
         <p class="text-uppercase fs-2 fw-bold mb-2 heading-text">about us</p>
         <p>
@@ -200,8 +339,8 @@
           consectetur velit
         </p>
       </div>
-      <div class="row my-5">
-        <div class="col-sm col-md-6 col-lg-6 mb-4">
+      <div class="row my-5 flex-md-wrap flex-lg-nowrap flex-wrap">
+        <div class="col-12 col-lg-6 mb-4">
           <p class="mb-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -221,7 +360,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm col-md-6 col-lg-6">
+        <div class="col-12 col-lg-6">
           <p class="mb-3">
             Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
             irure dolor in reprehenderit in voluptate velit esse cillum dolore
@@ -235,34 +374,36 @@
         </div>
       </div>
     </section>
-    <section class="statis row bg-secondary-subtle p-5 my-5 w-100">
-      <div class="col-sm-1 col-md-1 col-lg-3 mb-4 text-center">
+    <section
+      class="statis row bg-secondary-subtle p-5 my-5 w-100 flex-md-wrap flex-lg-nowrap flex-wrap"
+    >
+      <div class="col-sm col-md-6 col-lg-3 mb-4 text-center">
         <p class="fs-1 text-primary fw-bold">232</p>
         <p class="text-capitalize text-secondary fs-6">clients</p>
       </div>
-      <div class="col-sm- col-md-1 col-lg-3 mb-4 text-center">
+      <div class="col-sm col-md-6 col-lg-3 mb-4 text-center">
         <p class="fs-1 text-primary fw-bold">521</p>
         <p class="text-capitalize text-secondary fs-6">projects</p>
       </div>
-      <div class="col-sm-1 col-md-1 col-lg-3 mb-4 text-center">
+      <div class="col-sm col-md-6 col-lg-3 mb-4 text-center">
         <p class="fs-1 text-primary fw-bold">1453</p>
         <p class="text-capitalize text-secondary fs-6">hours of support</p>
       </div>
-      <div class="col-sm-1 col-md-1 col-lg-3 mb-4 text-center">
+      <div class="col-sm col-md-6 col-lg-3 mb-4 text-center">
         <p class="fs-1 text-primary fw-bold">32</p>
         <p class="text-capitalize text-secondary fs-6">workers</p>
       </div>
     </section>
 
-    <section class="video-section row container m-auto my-5 w-100">
-      <div class="col-sm-12 col-md-6">
+    <section class="video-section row container-fluid m-auto my-5 w-100">
+      <div class="col-sm-12 col-md-12 col-lg-6">
         <img
           src="https://th.bing.com/th/id/OIP.Ekodt74sE9k22Kcb1D_9XwHaFj?w=1600&h=1200&rs=1&pid=ImgDetMain"
           alt=""
           class="img-fluid img-thumbnail"
         />
       </div>
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-12 col-lg-6">
         <p class="fs-3 fw-bold mb-3 heading">
           Voluptatem dignissimos provident quasi corporis voluptates sit
           assumenda.
@@ -298,30 +439,32 @@
     </section>
 
     <section class="group-section my-5 bg-secondary-subtle p-4 p-lg-5 w-100">
-      <div class="row align-items-center m-auto flex-wrap row-gap-4">
-        <div class="col-6 col-lg-2 d-flex justify-content-center">
+      <div
+        class="row align-items-center m-auto flex-wrap row-gap-4 container-fluid"
+      >
+        <div class="col-6 col-md-3 col-lg-2 d-flex justify-content-center">
           <img src="assets/Images/MYOB.png" alt="" class="img-fluid" />
         </div>
-        <div class="col-6 col-lg-2 d-flex justify-content-center">
+        <div class="col-6 col-md-3 col-lg-2 d-flex justify-content-center">
           <img src="assets/Images/belimo.png" alt="" class="img-fluid" />
         </div>
-        <div class="col-6 col-lg-2 d-flex justify-content-center">
+        <div class="col-6 col-md-3 col-lg-2 d-flex justify-content-center">
           <img src="assets/Images/LifeGroups.png" alt="" class="img-fluid" />
         </div>
-        <div class="col-6 col-lg-2 d-flex justify-content-center">
+        <div class="col-6 col-md-3 col-lg-2 d-flex justify-content-center">
           <img src="assets/Images/grabyo.png" alt="" class="img-fluid" />
         </div>
-        <div class="col-6 col-lg-2 d-flex justify-content-center">
+        <div class="col-6 col-md-3 col-lg-2 d-flex justify-content-center">
           <img src="assets/Images/cirtcus logo.png" alt="" class="img-fluid" />
         </div>
-        <div class="col-6 col-lg-2 d-flex justify-content-center">
+        <div class="col-6 col-md-3 col-lg-2 d-flex justify-content-center">
           <img src="assets/Images/Trustly-logo.png" alt="" class="img-fluid" />
         </div>
       </div>
     </section>
 
     <section
-      class="testimonials container d-flex flex-column align-items-center gap-4 py-5 w-100"
+      class="testimonials container-fluid d-flex flex-column align-items-center gap-4 py-5 w-100"
     >
       <div class="heading text-center">
         <p class="fs-2 text-uppercase fw-bold heading-text">testimonials</p>
@@ -371,7 +514,7 @@
       class="services d-flex flex-column align-items-center gap-5 mt-5 bg-secondary-subtle py-5 px-3 w-100"
       id="services"
     >
-      <div class="heading text-center">
+      <div class="heading text-center container-fluid">
         <p class="fs-2 text-uppercase fw-bold heading-text">services</p>
         <p class="fs-6">
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
@@ -379,10 +522,12 @@
         </p>
       </div>
 
-      <div class="cards row flex-wrap">
-        <div class="col-sm col-lg-4">
+      <div
+        class="cards row d-flex flex-md-wrap flex-lg-nowrap flex-wrap container-fluid"
+      >
+        <div class="col-12 col-md-6 col-lg-4">
           <div
-            class="card card-activity d-flex border-0 flex-column align-items-center justify-content-center px-4 py-5 mb-4 gap-2"
+            class="card card-activity d-flex border-0 flex-column align-items-center justify-content-center px-1 py-5 pt-md-4 pb-md-5 py-lg-5 mb-4 gap-2"
             style="width: 27rem"
           >
             <div class="icon-div">
@@ -407,13 +552,9 @@
             </p>
           </div>
           <div
-            class="card card-bounding d-flex border-0 flex-column align-items-center justify-content-center px-4 py-5 mb-4 gap-2"
+            class="card card-bounding d-flex border-0 flex-column align-items-center justify-content-center px-1 py-5 mb-4 gap-2"
             style="width: 27rem"
           >
-            <!-- <div class="icon bg-secondary-subtle p-2">
-              <i class="bi bi-bounding-box-circles fs-2 text-danger"></i>
-            </div> -->
-
             <div class="icon-div">
               <svg viewBox="50 0 130 200" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -439,9 +580,9 @@
             </p>
           </div>
         </div>
-        <div class="col-sm col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4">
           <div
-            class="card card-circle d-flex border-0 flex-column align-items-center justify-content-center px-4 py-5 mb-4 gap-2"
+            class="card card-circle d-flex border-0 flex-column align-items-center justify-content-center px-1 py-5 mb-4 gap-2"
             style="width: 27rem"
           >
             <!-- <div class="icon bg-secondary-subtle p-2">
@@ -471,7 +612,7 @@
           </div>
 
           <div
-            class="card card-calendar d-flex border-0 flex-column align-items-center justify-content-center px-4 py-5 mb-4 gap-2"
+            class="card card-calendar d-flex border-0 flex-column align-items-center justify-content-center px-1 py-5 mb-4 gap-2"
             style="width: 27rem"
           >
             <!-- <div class="icon bg-secondary-subtle p-2">
@@ -501,9 +642,9 @@
             </p>
           </div>
         </div>
-        <div class="col-sm col-lg-4">
+        <div class="col-12 col-md col-lg-4 d-md-flex d-lg-block last-col">
           <div
-            class="card card-easel d-flex border-0 flex-column align-items-center justify-content-center px-4 py-5 mb-4 gap-2"
+            class="card card-easel d-flex border-0 flex-column align-items-center justify-content-center px-1 py-5 mb-4 gap-2"
             style="width: 27rem"
           >
             <!-- <div class="icon bg-secondary-subtle p-2">
@@ -534,7 +675,7 @@
             </p>
           </div>
           <div
-            class="card card-square d-flex border-0 flex-column align-items-center justify-content-center px-4 py-5 mb-4 gap-2"
+            class="card card-square d-flex border-0 flex-column align-items-center justify-content-center px-1 py-5 mb-4 gap-2"
             style="width: 27rem"
           >
             <!-- <div class="icon bg-secondary-subtle p-2">
@@ -581,7 +722,7 @@
       </p>
     </section>
 
-    <section class="portfolio container mb-5 py-5 w-100" id="portfolio">
+    <section class="portfolio container-fluid mb-5 py-5 w-100" id="portfolio">
       <div class="heading text-center mb-3">
         <p class="fs-2 text-uppercase fw-bold heading-text">portfolio</p>
         <p class="fs-6">
@@ -629,7 +770,7 @@
     </section>
 
     <section class="team bg-secondary-subtle py-5 w-100" id="team">
-      <div class="heading text-center my-5 m-auto">
+      <div class="heading text-center my-5 m-auto container-fluid">
         <p class="fs-2 text-uppercase fw-bold mb-2 heading-text">team</p>
         <p class="fs-6">
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
@@ -637,7 +778,7 @@
         </p>
       </div>
       <div
-        class="teamCards container d-flex justify-content-center align-items-center flex-wrap gap-4 my-5"
+        class="teamCards container-fluid d-flex justify-content-center align-items-center flex-wrap gap-4 my-5"
       >
         <div class="card" style="width: 19rem">
           <div class="card-img">
@@ -719,7 +860,9 @@
     </section>
 
     <section class="price py-3 w-100">
-      <div class="heading text-center my-1 my-lg-5 m-auto link-offset-2">
+      <div
+        class="heading text-center my-1 my-lg-5 m-auto link-offset-2 container-fluid"
+      >
         <p class="fs-2 text-uppercase fw-bold heading-text">pricing</p>
         <p class="fs-6 mt-2">
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
@@ -727,7 +870,7 @@
         </p>
       </div>
       <div
-        class="plans d-flex m-auto justify-content-center my-5 pt-5 flex-wrap"
+        class="plans d-flex m-auto justify-content-center my-5 pt-5 flex-wrap px-md-3 container-fluid"
       >
         <div class="plan p-5">
           <p class="text-capitalize fw-bold text-dark fs-4">free plan</p>
@@ -815,7 +958,9 @@
     </section>
 
     <section class="questions bg-secondary-subtle py-5 my-5 w-100">
-      <div class="heading text-center m-auto link-offset-2 mb-5">
+      <div
+        class="heading text-center m-auto link-offset-2 mb-5 container-fluid"
+      >
         <p class="fs-2 text-uppercase fw-bold heading-text">
           Frequently Asked Questions
         </p>
@@ -825,7 +970,7 @@
         </p>
       </div>
       <div
-        class="accordion accordion-flush w-75 px-3 px-lg-o m-auto"
+        class="accordion accordion-flush w-75 px-3 px-lg-o m-auto container-fluid"
         id="accordionFlushExample"
       >
         <div class="accordion-item mb-3 py-2 rounded-3">
@@ -987,7 +1132,7 @@
       </div>
     </section>
 
-    <section class="contact py-5 my-5 container w-100" id="contact">
+    <section class="contact py-5 my-5 container-fluid w-100" id="contact">
       <div class="heading text-center m-auto link-offset-2 mb-5">
         <p class="fs-2 text-uppercase fw-bold heading-text">contact</p>
         <p class="fs-6 mt-2">
@@ -1007,7 +1152,9 @@
         ></iframe>
       </div>
       <div class="info row flex-wrap">
-        <div class="col col-lg-4 d-flex flex-column gap-4 mb-4 mb-lg-0">
+        <div
+          class="col col-md-12 col-lg-4 d-flex flex-column gap-4 mb-4 mb-lg-0"
+        >
           <div class="add d-flex align-items-center gap-4">
             <i class="bi bi-geo-alt btn btn-primary fs-5 fw-bold py-2"></i>
             <div>
@@ -1030,7 +1177,7 @@
             </div>
           </div>
         </div>
-        <div class="col col-lg-8">
+        <div class="col col-md-12 col-lg-8">
           <form action="" class="d-flex flex-column gap-4">
             <div class="d-flex justify-content-between gap-4">
               <input
@@ -1063,7 +1210,7 @@
     </section>
 
     <footer class="bg-secondary-subtle py-5 mt-2 w-100">
-      <div class="row m-auto container mb-5 flex-wrap">
+      <div class="row m-auto container-fluid mb-5 flex-wrap">
         <div class="col-12 col-lg-6 mb-4 mb-lg-0">
           <p class="text-capitalize fw-bold fs-2 heading-text text-primary">
             onePage
@@ -1156,7 +1303,9 @@
             </li>
           </ul>
         </div>
-        <div class="col-12 col-lg-2 mt-5 mt-lg-0 text-center">
+        <div
+          class="col-12 col-md col-lg-2 mt-5 mt-lg-0 text-sm-center text-md-start"
+        >
           <p class="text-capitalize mb-2 fw-bold text-dark">contact us</p>
           <div class="mb-3">
             <p class="text-capitalize">a108 adam street</p>
@@ -1169,15 +1318,17 @@
           </div>
         </div>
       </div>
-      <div class="row container m-auto text-center py-4 bg-info text-light">
+      <div
+        class="row container-fluid m-auto text-center py-4 bg-info text-light"
+      >
         <p>&copy; Copyright <b>OnePage</b> All Rights Reserved</p>
         <p>
           Designed by <span class="text-secondary-emphasis">BootstrapMade</span>
         </p>
       </div>
-      <!-- <a class="above btn btn-primary position-fixed" href="#main"
+      <a class="above btn btn-primary position-fixed" href="#main"
         ><i class="bi bi-arrow-up"></i
-      ></a> -->
+      ></a>
     </footer>
 
     <script src="JS/all.js"></script>

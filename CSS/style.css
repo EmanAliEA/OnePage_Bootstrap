@@ -6,9 +6,12 @@
 * {
   box-sizing: border-box !important;
 }
+html,
+body {
+  width: 100%;
+}
 body {
   position: relative;
-  width: 100%;
 }
 
 nav .deep:hover .deep-list {
@@ -351,9 +354,68 @@ footer .links i:hover {
 footer ul a:hover {
   color: var(--textColor) !important;
 }
+@media (max-width: 768px) {
+  .nav-sm {
+    display: flex !important;
+  }
+  main .item {
+    width: 45% !important;
+  }
+  main > .container-fluid {
+    width: 100% !important;
+  }
+  main div:first-child h1 {
+    font-size: 1.75rem !important;
+  }
+  main div:first-child p {
+    font-size: 1rem !important;
+  }
 
-@media (max-width: 320px) {
-  main > .container {
+  .heading-text {
+    font-size: 2rem !important;
+  }
+
+  .about-section button {
+    font-size: 1.2rem !important;
+  }
+  .statis > div p:first-child {
+    font-size: 2.5rem !important;
+  }
+  .services .card .icon {
+    font-size: 2.3rem !important;
+  }
+  .services .card {
+    width: 20rem !important;
+  }
+  .services .last-col {
+    gap: 38px !important;
+  }
+  .call p:nth-child(2) {
+    width: 100% !important;
+  }
+  .price .plan {
+    width: 100% !important;
+  }
+  .plan.middle {
+    transform: scale(1) !important;
+    /* margin: 3rem 0 !important; */
+  }
+  .questions .accordion {
+    width: 100% !important;
+  }
+  footer > div:first-child p:nth-of-type(2) {
+    width: 100% !important;
+  }
+  footer div:last-child {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 571px) {
+  .nav-sm {
+    display: flex !important;
+  }
+  main > .container-fluid {
     width: 90% !important;
   }
   main div:first-child h1 {
@@ -393,8 +455,11 @@ footer ul a:hover {
     width: 100% !important;
   }
 }
-@media (max-width: 571px) {
-  main > .container {
+@media (max-width: 320px) {
+  .nav-sm {
+    display: flex !important;
+  }
+  main > .container-fluid {
     width: 90% !important;
   }
   main div:first-child h1 {
@@ -402,6 +467,9 @@ footer ul a:hover {
   }
   main div:first-child p {
     font-size: 1rem !important;
+  }
+  main .item {
+    width: 100% !important;
   }
 
   .heading-text {
@@ -413,6 +481,9 @@ footer ul a:hover {
   }
   .statis > div p:first-child {
     font-size: 2.5rem !important;
+  }
+  .services .card {
+    width: 100% !important;
   }
   .services .card .icon {
     font-size: 2.3rem !important;
