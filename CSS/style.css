@@ -8,7 +8,7 @@
 }
 html,
 body {
-  width: 100%;
+  width: 100vw;
 }
 body {
   position: relative;
@@ -326,7 +326,7 @@ li {
   background-color: var(--textColor) !important;
 }
 .above {
-  bottom: 10%;
+  bottom: 4%;
   /* right: 3%; */
   left: 55%;
 }
