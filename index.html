@@ -144,7 +144,7 @@
 
     <!-- Modal -->
     <div
-      class="modal fade modal-dialog modal-dialog-centered modal-dialog-scrollable w-100 position-absolute z-4 start-50"
+      class="modal fade modal-dialog modal-dialog-centered modal-dialog-scrollable w-100 position-fixed z-4 start-0"
       id="staticBackdrop"
       data-bs-backdrop="static"
       data-bs-keyboard="false"
@@ -375,7 +375,7 @@
       </div>
     </section>
     <section
-      class="statis row bg-secondary-subtle p-5 my-5 w-100 flex-md-wrap flex-lg-nowrap flex-wrap"
+      class="static row bg-secondary-subtle p-5 my-5 w-100 flex-md-wrap flex-lg-nowrap flex-wrap"
     >
       <div class="col-sm col-md-6 col-lg-3 mb-4 text-center">
         <p class="fs-1 text-primary fw-bold">232</p>
@@ -464,7 +464,7 @@
     </section>
 
     <section
-      class="testimonials container-fluid d-flex flex-column align-items-center gap-4 py-5 w-100"
+      class="testimonials container-fluid d-flex flex-column align-items-center gap-4 py-5 px w-100 overflow-hidden"
     >
       <div class="heading text-center">
         <p class="fs-2 text-uppercase fw-bold heading-text">testimonials</p>
@@ -527,8 +527,7 @@
       >
         <div class="col-12 col-md-6 col-lg-4">
           <div
-            class="card card-activity d-flex border-0 flex-column align-items-center justify-content-center px-1 py-5 pt-md-4 pb-md-5 py-lg-5 mb-4 gap-2"
-            style="width: 27rem"
+            class="card card-activity d-flex border-0 flex-column align-items-center justify-content-center px-1 py-5 pt-md-4 pb-md-5 py-lg mb-4 gap-2"
           >
             <div class="icon-div">
               <svg viewBox="40 0 130 200" xmlns="http://www.w3.org/2000/svg">
@@ -553,7 +552,6 @@
           </div>
           <div
             class="card card-bounding d-flex border-0 flex-column align-items-center justify-content-center px-1 py-5 mb-4 gap-2"
-            style="width: 27rem"
           >
             <div class="icon-div">
               <svg viewBox="50 0 130 200" xmlns="http://www.w3.org/2000/svg">
@@ -583,7 +581,6 @@
         <div class="col-12 col-md-6 col-lg-4">
           <div
             class="card card-circle d-flex border-0 flex-column align-items-center justify-content-center px-1 py-5 mb-4 gap-2"
-            style="width: 27rem"
           >
             <!-- <div class="icon bg-secondary-subtle p-2">
               <i class="bi bi-broadcast fs-2 text-warning"></i>
@@ -613,7 +610,6 @@
 
           <div
             class="card card-calendar d-flex border-0 flex-column align-items-center justify-content-center px-1 py-5 mb-4 gap-2"
-            style="width: 27rem"
           >
             <!-- <div class="icon bg-secondary-subtle p-2">
               <i class="bi bi-calendar-week fs-2 text-primary-emphasis"></i>
@@ -645,7 +641,6 @@
         <div class="col-12 col-md col-lg-4 d-md-flex d-lg-block last-col">
           <div
             class="card card-easel d-flex border-0 flex-column align-items-center justify-content-center px-1 py-5 mb-4 gap-2"
-            style="width: 27rem"
           >
             <!-- <div class="icon bg-secondary-subtle p-2">
               <i class="bi bi-easel text-success fs-2"></i>
@@ -676,7 +671,6 @@
           </div>
           <div
             class="card card-square d-flex border-0 flex-column align-items-center justify-content-center px-1 py-5 mb-4 gap-2"
-            style="width: 27rem"
           >
             <!-- <div class="icon bg-secondary-subtle p-2">
               <i class="bi bi-chat-square-text text-danger-emphasis fs-2"></i>
@@ -1304,7 +1298,7 @@
           </ul>
         </div>
         <div
-          class="col-12 col-md col-lg-2 mt-5 mt-lg-0 text-sm-center text-md-start"
+          class="col-12 col-md col-lg-2 mt-5 mt-lg-0 text-center text-md-start text-lg-start"
         >
           <p class="text-capitalize mb-2 fw-bold text-dark">contact us</p>
           <div class="mb-3">
@@ -1328,7 +1322,7 @@
       </div>
     </footer>
 
-    <a class="above btn btn-primary position-sticky" href="#main"
+    <a class="above btn btn-primary position-fixed" href="#main"
       ><i class="bi bi-arrow-up"></i
     ></a>
 

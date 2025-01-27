@@ -179,6 +179,9 @@ li {
 .services .card:hover .icon {
   color: white !important;
 }
+.services .last-col {
+  gap: 29px !important;
+}
 .descr-service {
   font-size: 16px;
 }
@@ -326,9 +329,8 @@ li {
   background-color: var(--textColor) !important;
 }
 .above {
-  bottom: 4%;
-  /* right: 3%; */
-  left: 95%;
+  bottom: 3%;
+  right: 3%;
 }
 input,
 textarea {
@@ -379,17 +381,25 @@ footer ul a:hover {
   .about-section button {
     font-size: 1.2rem !important;
   }
-  .statis > div p:first-child {
+  .static > div p:first-child {
     font-size: 2.5rem !important;
+  }
+  .services .cards > div {
+    display: flex !important;
+    justify-content: space-between !important;
+    gap: 5px !important;
+  }
+  .portfolio .card .text p:first-child {
+    font-size: 16px !important;
   }
   .services .card .icon {
     font-size: 2.3rem !important;
   }
   .services .card {
-    width: 20rem !important;
+    width: 50% !important;
   }
   .services .last-col {
-    gap: 38px !important;
+    gap: 15px !important;
   }
   .call p:nth-child(2) {
     width: 100% !important;
@@ -403,6 +413,9 @@ footer ul a:hover {
   }
   .questions .accordion {
     width: 100% !important;
+  }
+  .teamCards .card {
+    width: 48% !important;
   }
   footer > div:first-child p:nth-of-type(2) {
     width: 100% !important;
@@ -433,14 +446,22 @@ footer ul a:hover {
   .about-section button {
     font-size: 1.2rem !important;
   }
-  .statis > div p:first-child {
+  .static > div p:first-child {
     font-size: 2.5rem !important;
   }
-  .services .card {
-    width: 19rem !important;
+  .services .cards > div {
+    display: flex !important;
+    justify-content: space-between !important;
   }
+  .services .card {
+    width: 50% !important;
+  }
+
   .services .card .icon {
     font-size: 2.3rem !important;
+  }
+  .services .last-col {
+    gap: 8px !important;
   }
   .call p:nth-child(2) {
     width: 100% !important;
@@ -456,7 +477,7 @@ footer ul a:hover {
     width: 100% !important;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   .nav-sm {
     display: flex !important;
   }
@@ -480,8 +501,12 @@ footer ul a:hover {
   .about-section button {
     font-size: 1.2rem !important;
   }
-  .statis > div p:first-child {
+  .static > div p:first-child {
     font-size: 2.5rem !important;
+  }
+  .services .cards > div {
+    display: block !important;
+    justify-content: space-between !important;
   }
   .services .card {
     width: 100% !important;
