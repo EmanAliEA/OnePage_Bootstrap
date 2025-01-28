@@ -41,7 +41,7 @@ const btns = document.querySelector(".protfolio .btns");
 
 function createImg(img, i) {
   const imgElement = `
-            <div class="card-img">
+            <div class="card-img ">
               <img src=${img.srs} alt="" class="mb-5" >
               <div class="heading-image bg-light d-flex justify-content-between p-3 align-items-center">
                 <div class="text">
@@ -63,7 +63,7 @@ function createImg(img, i) {
   return imgElement;
 }
 function createImgCol(imgs) {
-  const html = `<div class="col-sm col-md-6 col-lg-4 ">
+  const html = `<div class="col-12 col-sm col-md-6 col-lg-4 ">
         ${imgs.map((item, i) => createImg(item, i))}
     </div>`;
   cardsImg.insertAdjacentHTML("beforeend", html);

@@ -497,8 +497,7 @@ footer ul a:hover {
   .heading-text {
     font-size: 2rem !important;
   }
-
-  .about-section button {
+  .portfolio .card .about-section button {
     font-size: 1.2rem !important;
   }
   .static > div p:first-child {
@@ -520,6 +519,9 @@ footer ul a:hover {
   .plan.middle {
     transform: scale(1) !important;
     /* margin: 3rem 0 !important; */
+  }
+  .teamCards .card {
+    width: 100% !important;
   }
   .questions .accordion {
     width: 100% !important;
